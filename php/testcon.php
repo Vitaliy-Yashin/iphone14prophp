@@ -16,7 +16,6 @@ echo "Успешное подключение к базе данных!";
 $query = $conn->query("SELECT * FROM `iphone14`");
 $result = $query->fetch_assoc();
 
-print_r($result);
 
 // Закрытие соединения
 $conn->close();
