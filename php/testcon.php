@@ -13,8 +13,6 @@ if ($conn->connect_error) {
     die("Ошибка подключения: " . $conn->connect_error);
 }
 echo "Успешное подключение к базе данных!";
-$query = $conn->query("SELECT * FROM `iphone14`");
-$result = $query->fetch_assoc();
 
 
 // Закрытие соединения
