@@ -19,7 +19,7 @@ if ($link->connect_error) {
 echo "Успешное подключение к базе данных!";
 
 
-if(!$link){
+if($link->connect_error){
     die("Connection failed");
 }else{
     mysqli_set_charset($link, "utf8");
