@@ -16,14 +16,14 @@ $link = new mysqli($servername, $username, $password, $dbname);
 if ($link->connect_error) {
     die("Ошибка подключения: " . $link->connect_error);
 }
-echo "Успешное подключение к базе данных! <br>";
+echo "Успешное подключение к базе данных!";
 
 
 if($link->connect_error){
     die("Connection failed");
 }else{
     mysqli_set_charset($link, "utf8");
-    echo "$login <br> $pass <br> $phone <br>";
+    echo "$login $pass $phone";
 }
 
 if(trim($_POST['method']) == 'login'){
@@ -56,7 +56,7 @@ function Reg(){
     if($login === '' || $pass === '' || $phone === ''){
       $error = array();
       $error[0] = "500";
-      echo "Здесь, где пустые поля <br>";
+      echo "Здесь, где пустые поля";
       die("Connection failed");
       return;
     }else{
