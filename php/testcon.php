@@ -27,14 +27,14 @@ if($link->connect_error){
 }
 
 if(trim($_POST['method']) == 'login'){
-    Login();
+    Login($login, $pass, $phone, $link);
 }
 
 if(trim($_POST['method']) == 'reg'){
-    Reg();
+    Reg($login, $pass, $phone, $link);
 }
 
-function Login(){
+function Login($login, $pass, $phone, $link){
     if($login == '' || $pass == '' || $phone == ''){
       $error = array();
       $error[0] = "500";
@@ -52,7 +52,7 @@ function Login(){
     }
 }
 
-function Reg(){
+function Reg($login, $pass, $phone, $link){
     if($login == '' || $pass == '' || $phone == ''){
       $error = array();
       $error[0] = "500";
@@ -70,7 +70,7 @@ function Reg(){
            return;
         }
 
-        mysqli_query($link,"INSERT INTO users SET login='".$login."', password='".$password."', tel='".$phone."'");
+        mysqli_query($link,"INSERT INTO users SET login='".$login."', password='".$pass."', tel='".$phone."'");
         $error = array();
         $error[0] = "200";
         echo json_encode($error);
