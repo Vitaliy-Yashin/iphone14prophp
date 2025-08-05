@@ -5,7 +5,7 @@ $phone = trim($_POST['phone']);
 $servername = "localhost"; // или IP-адрес вашего сервера
 $username = "root"; // замените на ваше имя пользователя
 $password = 'Par$HH1?!'; // замените на ваш пароль
-$dbname = "register"; // замените на имя вашей базы данных
+$dbname = "iphone14"; // замените на имя вашей базы данных
 
 
 $link=new mysqli($servername, $username, $password, $dbname);
