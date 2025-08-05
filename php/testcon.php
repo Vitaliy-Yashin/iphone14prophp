@@ -64,7 +64,7 @@ function Reg(){
         { 
            $error = array();
            $error[0] = "500";
-           echo "Здесь"
+           echo "Здесь";
            die("Connection failed");
            return;
         }
