@@ -56,7 +56,8 @@ function Reg(){
     if($login == '' || $pass == '' || $phone == ''){
       $error = array();
       $error[0] = "500";
-      echo "Здесь, где пустые поля";
+      echo "Здесь, где пустые поля <br>";
+      echo "Логин: $login <br>"
       die("Connection failed");
       return;
     }else{
