@@ -23,6 +23,7 @@ if($link->connect_error){
     die("Connection failed");
 }else{
     mysqli_set_charset($link, "utf8");
+    echo "$login $pass $phone";
 }
 
 if(trim($_POST['method']) == 'login'){
