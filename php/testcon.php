@@ -57,7 +57,7 @@ function Reg(){
       $error = array();
       $error[0] = "500";
       echo "Здесь, где пустые поля <br>";
-      echo "Логин: $login <br>"
+      echo "Логин: <br>"
       die("Connection failed");
       return;
     }else{
