@@ -42,7 +42,7 @@ function login() {
     "&pass=" + encodeURIComponent(pass) +
     "&phone=" + encodeURIComponent(phoneMask.unmaskedValue) +
     "&method=" + method;
-    xhr.open("POST", './php/auth.php', true);
+    xhr.open("POST", './php/testcon.php', true);
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.send(body);
     xhr.onreadystatechange = function() {
