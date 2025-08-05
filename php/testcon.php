@@ -53,7 +53,7 @@ function Login(){
 }
 
 function Reg(){
-    if($login === '' || $pass === '' || $phone === ''){
+    if($login == '' || $pass == '' || $phone == ''){
       $error = array();
       $error[0] = "500";
       echo "Здесь, где пустые поля";
